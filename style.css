@@ -1,0 +1,60 @@
+body{
+font-family:Arial;
+text-align:center;
+background:#eeeeee;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:40px;
+}
+
+.slider{
+position:relative;
+width:600px;
+height:380px;
+}
+
+.slider img{
+position:absolute;
+top:0;
+width:600px;
+height:380px;
+object-fit:cover;
+transition:0.5s;
+}
+
+/* รูปกลาง */
+.main{
+left:0;
+z-index:3;
+}
+
+/* รูปซ้าย */
+.left{
+left:-200px;
+opacity:0.4;
+transform:scale(0.8);
+z-index:1;
+}
+
+/* รูปขวา */
+.right{
+left:200px;
+opacity:0.4;
+transform:scale(0.8);
+z-index:1;
+}
+
+/* ปุ่มเลื่อน */
+.nav{
+font-size:40px;
+border:none;
+background:none;
+cursor:pointer;
+padding:20px;
+z-index:10;
+position:relative;
+}
